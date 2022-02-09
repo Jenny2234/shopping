@@ -1,75 +1,484 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>ratio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .make{
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    *{
+      /* border: 0.5px solid; */ 
+      position: relative;
+    }
+    .nn{
+      background-color: #fff;
+    }
+    .row{
+      padding: 0 !important;
+    }
+    .col-md-3 .col-sm-6{
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    h1{
+      color:purple;
+      text-align: center;
+      /* align-items: center; /* div 水平居中 */
+      /* vertical-align: middle; /* div 垂直居中 */
+      
+      /* position: relative; 
+      /* top: 50%; /* 從上方往下移動 */
+      /* left: 50%; /* 從左方往右移動 */
+      /* transform: translate(-50%); */
+      /* display: flex; */
+    }
+    .p2{
+      width: 300px;
+      max-width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      /* height: 50px; */
+      box-shadow:3px 3px 9px rgb(12, 12, 11);
+      margin:20px;
+      border-radius:15%;
+    }
+    .make{
             color: rgb(250, 61, 71);
             font-size: 30px;
         }
-        .con{
-            justify-content: center;
-        }
-        .cart{
-            position: relative;
-            left: 100px;
-        }
-    </style>
+    .jj{
+      position: relative;
+      bottom: 15px;
+    }
+    body{
+      border: 60px;
+      border-left-style:solid;
+      border-right-style:solid;
+      border-bottom-style:solid;
+      border-color:rgb(238, 167, 167);
+    }
+  </style>
 </head>
-<body style="border:30px solid rgb(238, 167, 167);">
-    <header style="background-color:rgb(238, 167, 167);">
-        <div class="container py-3 d-flex justify-content-between">
-            <div>
-            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" alt="" width="40px">
-            </div>
-            <a class="make"> <b></b> 車前草購物網</b></a>
-            <div>
-                <a href="">登入</a>|<a href="page2.html">註冊</a>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-    <div class='container mt-3'>
-        <div class="row" >
-            <main class="col-lg-9">
-                <article class="cart">
-                <div style="text-align:center;">
-                    <h1 class=""> <b></b> 絨毛玩偶-金</b></h1>
-                </div>
-                <figure class="figure">
-                    <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" class="figure-img img-fluid rounded con"alt="">
-                    <figcaption class="figure-caption">絨毛玩偶-金</figcaption>
-                  </figure>
-                <h3 class="">經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~<3。</h3>
 
-                <div class="table-responsive">
-                    <table class="table table-hover table-bordered">
-                        <tr>
-                            <th>商品名稱</th><td>絨毛玩偶-金</td>
-                        </tr>
-                        <tr>
-                            <th>商品數量</th><td>17</td>
-                        </tr>
-                        <tr>
-                            <th>已售出</th><td>983</td>
-                        </tr>
-                        <tr>
-                            <th>售價</th><td>599</td>
-                        </tr>
-                    </table>
+<body>
+
+    <header class="kk" style="background-color:rgb(238, 167, 167);">
+      <div class="container py-3 d-flex justify-content-between">
+          <div>
+          <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" alt="" width="40px">
+          </div>
+          <a class="make"> <b></b> 車前草購物網</b></a>
+          <div>
+              <a href="">登入</a>|<a href="page2.html">註冊</a>
+          </div>
+      </div>
+    </header>
+
+  <div class="container">
+    <!-- <h1 class="p1">歡迎您再次來到XX購物</h1> -->
+  </div>
+  <div class="container">
+    <div class="nn">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
                 </div>
-                <div style="text-align:center;">
-                    <button type="button" class="btn btn-warning con"> <a href="page2.html">購買</a> </button>     
-                </div>           <p>&nbsp;</p>
-                </article>  
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="經典不敗!毛茸茸的絨毛玩偶，陪伴你度過每一天，呆呆的可愛大臉，給你一整天的好心情~">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710164_PE727367_S5.jpg" width="140px" alt="一隻狗">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>狗</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>983</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>599</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-md-3 col-sm-6">
+          <div class="p2" title="">
+            <img src="https://www.ikea.com.tw/dairyfarm/tw/images/101/0710175_PE727378_S5.jpg" width="140px" alt="一隻鯊魚">
+            <div class="table-responsive" >
+              <table class="table table-hover table-bordered">
+                  <tr>
+                      <th>商品名稱</th><td>一隻鯊魚</td>
+                  </tr>
+                  <tr>
+                      <th>已售出</th><td>3</td>
+                  </tr>
+                  <tr>
+                      <th>售價</th><td>1299</td>
+                  </tr>
+                  <tr>
+                    <th>請選擇數量</th><td>
+                      <select name="dropdown" id="">
+                      <option value="1" selected>限購3</option>
+                      <option value="2" >1</option>
+                      <option value="3" >2</option>
+                      <option value="3" >3</option>
+                  </select></td>
+                </tr>
+              </table>
+                <div class="jj">
+                  <div style="text-align:center;">
+                    <button type="button" class="btn btn-warning con"> <a href="page2.html">&nbsp;購買&nbsp;</a> </button>     
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
